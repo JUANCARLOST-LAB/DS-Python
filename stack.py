@@ -30,7 +30,7 @@ class stack:
         self.head = newNode
         self.sizeOfStack = self.sizeOfStack + 1
 
-    def front(self):
+    def top(self):
         if self.head:
             return self.head.value
         else:
@@ -59,22 +59,22 @@ st.insert(7)
 print(st.size())
 
 # Prints 7
-print(st.front())
+print(st.top())
 
 # Removes 7
 st.pop()
 
 # Prints 5
-print(st.front())
+print(st.top())
 
 # Removes 5
 st.pop()
 
 # Prints 3
-print(st.front())
+print(st.top())
 
 # Removes 3
 st.pop()
 
 # Prints None because the stack is empty
-print(st.front())
+print(st.top())
